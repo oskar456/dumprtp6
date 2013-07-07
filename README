@@ -1,0 +1,21 @@
+dumprtp6 - Next generation multicast RTP stream receiver
+========================================================
+
+This is a replace of dumprtp program, found in project
+[DVBtools](http://sourceforge.net/projects/dvbtools)
+It's main purpose is to dump media stream, received from 
+multicast RTP/UDP, or UDP only stream to standard output
+or file.
+
+Key Features
+------------
+
+ -  IPv4 and IPv6 support
+ -  Source Specific Multicast (SSM) support
+ -  RTP sequence number checking for congestion detection
+ -  RAW UDP mode (without RTP headers)
+
+Usage
+-----
+
+ - See `dumprtp6 --help`

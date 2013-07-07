@@ -40,6 +40,7 @@
 #include <netinet/in.h>
 #include <arpa/inet.h>
 #include <net/if.h>
+#include <time.h>
 
 #define max(a,b) ((a)>(b) ? (a):(b))
 #define min(a,b) ((a)<(b) ? (a):(b))
@@ -84,13 +85,20 @@ char *conf_port = NULL;
  */
 int logger(enum loglevel level, const char *format, ...) {
 	va_list ap, aq;
-	int r;
+	char buf[50];
+	time_t now_epoch;
+	struct tm *now;
+	int r = 0;
 	if (conf_verbosity >= level) {
 		va_start(ap, format);
+		time(&now_epoch);
+		now = localtime(&now_epoch);
+		strftime(buf, 50, "%Y-%m-%d %H:%M:%S", now);
+		fprintf(stderr, "%s ", buf);
 		r=vfprintf(stderr,format, ap);
 		va_end(ap);
-		return r;
 	}
+	return r;
 }
 
 

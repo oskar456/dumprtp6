@@ -1,0 +1,7 @@
+2009-01-17 15:00 Ondrej Caletka <o.caletka@sh.cvut.cz>
+	Version 0.2.
+	Addded fallback to old protocol-specific API
+	for multicast join.
+
+2009-01-16 13:40 Ondrej Caletka <o.caletka@sh.cvut.cz>
+	Initial release.

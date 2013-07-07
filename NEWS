@@ -1,0 +1,8 @@
+Version 0.3
+ - Print timestamp to all log lines
+
+Version 0.2
+ - Added fallback to protocol-specific multicast API
+
+Version 0.1
+ - Initial release
