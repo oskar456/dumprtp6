@@ -205,13 +205,6 @@ void parseCmdLine(int argc, char *argv[]) {
 	} else {
 		conf_port = strdup("1234");
 	}
-
-	logger(LOG_DEBUG, "Vebosity: %d, UDPonly: %d, AF: %d\n"
-			"Source: %s, Interface: %s,\n"
-			"IP: %s, port: %s\n",
-			conf_verbosity, conf_udponly, conf_family,
-			conf_source, conf_interface,
-			conf_IP, conf_port);
 }
 
 /*
