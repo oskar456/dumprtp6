@@ -25,6 +25,7 @@
 #endif /* HAVE_CONFIG_H */
 
 #include <stdio.h>
+#include <unistd.h>
 #include <stdlib.h>
 #include <stdarg.h>
 #include <errno.h>
